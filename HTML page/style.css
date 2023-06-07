@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:wght@300;500;800&display=swap');
+
+* {
+    margin: 2;
+    padding: 2;
+    box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+body {
+    background-color: rgb(234, 186, 186);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: gap;
+}
+
+nav {
+    height: 60px;
+    background-color: rgb(196, 165, 160);
+    display: flex;
+    justify-content: space-between;
+    padding: 18px;
+}
+
+a {
+    text-decoration: none;
+    color: rgba(129, 8, 119, 0.801);
+}
+
+a:hover {
+    border-bottom: 3px solid brown;
+    transition: 0.1s all;
+    border-radius: 3px;
+    transform: scale(1.6);
+}
+
+.btn {
+    background-color: rgb(108, 182, 182);
+    border-radius: 20px;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgb(98, 98, 191);
+    color: rgb(255, 255, 255);
+    transition: 0.1s all;
+}
+
+.main-site {
+    text-align: center;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+}
+
+/*responsive */
+
+@media (max-width: 450px) {
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        overflow: hidden;
+        height: 20%;
+        font-size: 12pt;
+    }
+
+    h1 {
+        font-size: 17pt;
+    }
+}
